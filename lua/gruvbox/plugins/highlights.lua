@@ -72,7 +72,8 @@ local plugins = {
   TelescopeSelection = base.GruvboxOrangeBold,
   TelescopeSlectionCaret = base.GruvboxRed,
   TelescopeMultiSelection = base.GruvboxGray,
-  TelescopeNormal = base.GruvboxFg1,
+  -- TelescopeNormal = base.GruvboxFg1,
+  TelescopeNormal = {bg = base.GruvboxBg1.fg, fg = base.GruvboxFg1.fg},
   TelescopeBorder = "TelescopeNormal",
   TelescopePromptBorder = "TelescopeNormal",
   TelescopeResultsBorder = "TelescopeNormal",
@@ -216,6 +217,8 @@ local plugins = {
   GitSignsChange = base.GruvboxAquaSign,
   GitSignsDelete = base.GruvboxRedSign,
   GitSignsCurrentLineBlame = base.NonText,
+  -- Floating stuff
+  NormalFloat = { bg = base.GruvboxBg0.fg, },
   -- nvim-cmp
   CmpItemAbbr = base.GruvboxFg0,
   CmpItemAbbrDeprecated = base.GruvboxFg0,
@@ -270,6 +273,16 @@ local plugins = {
   mailQuoted5 = base.GruvboxRed,
   mailQuoted6 = base.GruvboxOrange,
   mailSignature = base.Comment,
+  -- which-key
+  -- WhichKey = { fg = C.purple },
+  -- WhichKeySeperator = { fg = C.green },
+  -- WhichKeyGroup = { fg = C.blue, },
+  -- WhichKeyDesc = { fg = C.light_blue },
+  WhichKeyFloat = { bg = base.GruvboxBg1.fg },
+  -- dashboard
+	DashboardHeader = {fg = base.GruvboxBg1.fg },
+	DashboardCenter = {fg = base.GruvboxBg1.fg },
+	DashboardFooter = {fg = base.GruvboxBg1.fg },
 }
 
 return plugins

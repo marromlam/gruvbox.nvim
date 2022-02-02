@@ -7,7 +7,8 @@ M.init = function(theme)
   end
 
   local bg0 = theme.GruvboxBg0.fg
-  local bg1 = theme.GruvboxBg1.fg
+  -- local bg1 = theme.GruvboxBg1.fg
+  local bg1 = theme.GruvboxBg2.fg
   local bg2 = theme.GruvboxBg2.fg
   local bg4 = theme.GruvboxBg4.fg
   local fg1 = theme.GruvboxFg1.fg
@@ -23,7 +24,8 @@ M.init = function(theme)
   local lightline_theme = {
     normal = {
       left = { { bg0, fg4, "bold" }, { fg4, bg2 } },
-      middle = { { fg4, bg1 } },
+      -- middle = { { fg4, bg1 } },
+      middle = { { red, bg1 } },
       right = { { bg0, fg4 }, { fg4, bg2 } },
       error = { { bg0, red } },
       warning = { { bg0, yellow } },
